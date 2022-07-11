@@ -9,6 +9,7 @@ package paquete06;
  * @author SALA I
  */
 class TarjetaCredito {
+    
     private String nombre;
     private String codigo;
     private double cupoMax;

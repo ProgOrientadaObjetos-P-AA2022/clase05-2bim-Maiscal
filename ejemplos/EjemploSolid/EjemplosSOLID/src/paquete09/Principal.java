@@ -17,5 +17,16 @@ public class Principal {
         gp.establecerLlave(api);
         gp.establecerUrl("http://api.movie?api=");
         System.out.println(gp.obtenerUrl());
+        
+        //---------------------------------
+        System.out.println("");
+        System.out.println("");
+        APINetflix api2 = new APINetflix();
+        api2.establecerApiKey("kajhf1235");
+        
+        GeneradorPeliculas gp2 = new GeneradorPeliculas();
+        gp2.establecerLlave(api2);
+        gp2.establecerUrl("http://www.url.ec/local/host/");
+        System.out.println(gp2.obtenerUrl());
     }
 }
