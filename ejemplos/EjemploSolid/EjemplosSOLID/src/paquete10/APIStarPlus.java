@@ -4,16 +4,18 @@
  */
 package paquete10;
 
+import java.io.Serializable;
+
 /**
  *
  * @author SALA I
  */
-public class APIStarPlus implements APIMovie{
+public class APIStarPlus implements APIMovie, Serializable{
     private String apiKey;
     
     @Override
     public void establecerApiKey(String ak){
-        apiKey = ak+"papoop32582po";
+        apiKey = String.format(ak+"papoop32582po");
     }
     
     @Override

@@ -5,14 +5,16 @@
  */
 package paquete10;
 
+import java.io.Serializable;
 
-public class APINetflix implements APIMovie{
+
+public class APINetflix implements APIMovie, Serializable{
     
     private String apiKey;
     
     @Override
     public void establecerApiKey(String ak){
-        apiKey = ak+123123;
+        apiKey = String.format(ak+123123);
     }
     
     @Override

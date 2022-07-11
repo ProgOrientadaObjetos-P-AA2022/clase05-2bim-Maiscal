@@ -5,14 +5,16 @@
  */
 package paquete10;
 
+import java.io.Serializable;
 
-public class APIAmazonMovie implements APIMovie{
+
+public class APIAmazonMovie implements APIMovie, Serializable{
     
     private String apiKey;
     
     @Override
     public void establecerApiKey(String ak){
-        apiKey = ak+"909090";
+        apiKey = String.format(ak+"909090");
     }
     
     @Override

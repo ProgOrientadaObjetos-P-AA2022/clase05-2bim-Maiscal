@@ -4,16 +4,18 @@
  */
 package paquete10;
 
+import java.io.Serializable;
+
 /**
  *
  * @author SALA I
  */
-public class APIDirectvGo implements APIMovie{
+public class APIDirectvGo implements APIMovie, Serializable{
     private String apiKey;
     
     @Override
     public void establecerApiKey(String ak){
-        apiKey = ak+"3a2sd165a";
+        apiKey = String.format(ak+"3a2sd165a");
     }
     
     @Override
